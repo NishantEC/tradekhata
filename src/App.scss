@@ -1,0 +1,56 @@
+@keyframes fly {
+  100% {
+    transform: rotate(1turn) translate(100px) rotate(-1turn);
+  }
+}
+
+@keyframes flyPlus {
+  100% {
+    transform: rotate(-1turn) translate(100px) rotate(1turn);
+  }
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(44, 11, 47);
+  background-image: radial-gradient(at top right, #9b007a, transparent),
+    radial-gradient(at top left, #1200d8, transparent),
+    radial-gradient(at bottom left, #8b004c, transparent),
+    radial-gradient(at bottom right, #1000c1, transparent);
+  background-size: 100% 100%;
+}
+
+.App-Container {
+  width: 100%;
+  height: calc(100vh - 4.25rem);
+  display: flex;
+
+.app-wrapper{
+  width: 100%;
+
+
+
+  
+  padding: 1rem;
+  div{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+}
+
+//   Utility styleset
+.glassy {
+  background: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
